@@ -13,11 +13,16 @@
 				}
 			],
 			"sinks": [],
-			"transformations": [],
+			"transformations": [
+				{
+					"name": "upperState"
+				}
+			],
 			"scriptLines": [
 				"source(allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     ignoreNoFilesFound: false) ~> source"
+				"     ignoreNoFilesFound: false) ~> source",
+				"source derive() ~> upperState"
 			]
 		}
 	}
