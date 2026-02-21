@@ -69,7 +69,7 @@
 				"     insertable: false,",
 				"     updateable: false,",
 				"     upsertable: true,",
-				"     keys:[(location_id)],",
+				"     keys:[('location_id')],",
 				"     umask: 0022,",
 				"     preCommands: [],",
 				"     postCommands: [],",
