@@ -55,7 +55,7 @@
 				"     ),",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true) ~> select1",
-				"select1 alterRow(upsertIf(\"1\" == \"1\")) ~> alterRow",
+				"select1 alterRow(upsertIf(1 == 1)) ~> alterRow",
 				"alterRow sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     format: 'delta',",
