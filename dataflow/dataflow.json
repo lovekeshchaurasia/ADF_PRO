@@ -40,7 +40,7 @@
 				"          country as string,",
 				"          latitude as double,",
 				"          longitude as double,",
-				"          last_updated_timestamp as string",
+				"          last_updated_timestamp as timestamp",
 				"     ),",
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
